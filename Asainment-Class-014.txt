@@ -1,0 +1,17 @@
+
+CREATE TABLE userinformation_Salary( id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, username VARCHAR(50),
+ age INT, phone VARCHAR(15), address VARCHAR(120), country VARCHAR(100) , salary VARCHAR(12) , 
+created_at TIMESTAMP, updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP );
+
+
+
+
+
+
+INSERT INTO userinformation_salary( `username`, `age`, `phone`, `address`, `salary`, `Country`) 
+VALUES ('[rana]','[1996-10-05]','[01737807512]','[khulna]','[30,000]','[bangladesh]');
+
+INSERT INTO userinformation_salary( `username`, `age`, `phone`, `address`, `salary`, `Country`) 
+VALUES ('[eashin]','[18-061997]','[01710689454]','[bagerhat]','[5000]','[bangladesh]');
+
+
