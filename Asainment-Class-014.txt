@@ -9,9 +9,31 @@ created_at TIMESTAMP, updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CU
 
 
 INSERT INTO userinformation_salary( `username`, `age`, `phone`, `address`, `salary`, `Country`) 
-VALUES ('[rana]','[1996-10-05]','[01737807512]','[khulna]','[30,000]','[bangladesh]');
+VALUES ('rana','20','01737807512','khulna','30,000','bangladesh');
 
 INSERT INTO userinformation_salary( `username`, `age`, `phone`, `address`, `salary`, `Country`) 
-VALUES ('[eashin]','[18-061997]','[01710689454]','[bagerhat]','[5000]','[bangladesh]');
+VALUES ('eashin','18','01710689454','bagerhat','5000','bangladesh');
+
+INSERT INTO userinformation_salary( `username`, `age`, `phone`, `address`, `salary`, `Country`) 
+VALUES ('rony','19','01710689454','bagerhat','4000','nepal');
+
+INSERT INTO userinformation_salary( `username`, `age`, `phone`, `address`, `salary`, `Country`) 
+VALUES ('ikbal','22','01710689454','comilla','10000','bangladesh');
+
+INSERT INTO userinformation_salary( `username`, `age`, `phone`, `address`, `salary`, `Country`) 
+VALUES ('billal','23','01737807512','dhaka','8000','bangladesh');
+
+INSERT INTO userinformation_salary( `username`, `age`, `phone`, `address`, `salary`, `Country`) 
+VALUES ('akash','24','01737807512','dhaka','8000','pakistan');
+
+
+//Find users who live in the same country//
+
+SELECT * FROM `userinformation_salary` WHERE `country`='bangladesh';
+
+
+//Show data  by high to low salary //
+
+
 
 
